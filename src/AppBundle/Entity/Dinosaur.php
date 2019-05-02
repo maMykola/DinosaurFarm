@@ -11,7 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Dinosaur
 {
-    const LARGE = 20;
+    const LARGE = 10;
+    const HUGE = 20;
 
     /**
      * @var int
