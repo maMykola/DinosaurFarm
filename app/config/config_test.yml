@@ -24,9 +24,5 @@ services:
 doctrine:
     dbal:
         url: 'sqlite:///%kernel.project_dir%/var/data/test.sqlite'
-#        driver: pdo_mysql
-#        host: '%test_database_host%'
-#        port: '%test_database_port%'
-#        dbname: '%test_database_name%'
-#        user: '%test_database_user%'
-#        password: '%test_database_password%'
+
+liip_functional_test: ~
