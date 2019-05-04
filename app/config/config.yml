@@ -31,6 +31,8 @@ framework:
     php_errors:
         log: true
 
+    ide: 'phpstorm://open?url=file://%%f&line=%%l'
+
 # Twig Configuration
 twig:
     debug: '%kernel.debug%'

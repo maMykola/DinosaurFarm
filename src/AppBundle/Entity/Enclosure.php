@@ -51,6 +51,11 @@ class Enclosure
         }
     }
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
     public function getDinosaurs(): Collection
     {
         return $this->dinosaurs;
@@ -94,5 +99,10 @@ class Enclosure
     public function getSecurities(): Collection
     {
         return $this->securities;
+    }
+
+    public function getDinosaurCount(): int
+    {
+        return $this->dinosaurs->count();
     }
 }
