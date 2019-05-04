@@ -80,7 +80,7 @@ class Enclosure
             || $this->dinosaurs->first()->isCarnivorous() === $dinosaur->isCarnivorous();
     }
 
-    private function isSecurityActive(): bool
+    public function isSecurityActive(): bool
     {
         foreach ($this->securities as $security) {
             if ($security->getIsActive()) {
