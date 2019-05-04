@@ -3,6 +3,12 @@
 {% block body %}
     <h3>Enclosures</h3>
 
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
     <table class="table-enclosures">
         <tbody>
         {% for enclosure in enclosures %}
@@ -24,4 +30,6 @@
         {% endfor %}
         </tbody>
     </table>
+
+    {% include '_partials/_newDinoForm.html.twig' %}
 {% endblock %}
